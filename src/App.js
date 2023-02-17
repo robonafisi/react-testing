@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 function App() {
 
   const [count, setCount] = useState(0);
+  const [habitcount, setHabitcount] = useState(0);
 
    useEffect(() => {
     document.title = `You clicked ${count} times`;
@@ -14,10 +15,15 @@ function App() {
     <div className="App">
       <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>
-        Click me
+        Add to Counter
       </button>
       
-      <button onClick={() => setCount(0)}>
+      <p>You have {habitcount} habits</p>
+      <button onClick={() => setHabitcount(habitcount + 1)}>
+        Add to Habits
+      </button>
+
+      <button onClick={() => {setCount(0); setHabitcount(0);}}>
         Reset
       </button>
     </div>
