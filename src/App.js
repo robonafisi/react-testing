@@ -1,10 +1,15 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function App() {
 
   const [count, setCount] = useState(0);
+
+   useEffect(() => {
+    document.title = `You clicked ${count} times`;
+  });
+
   return (
     <div className="App">
       <p>You clicked {count} times</p>
