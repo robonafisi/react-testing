@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 
 function App() {
@@ -13,6 +14,11 @@ function App() {
 
   return (
     <div>
+      
+      <Helmet>
+                <style>{'body { background: rgb(0,255,199); background: linear-gradient(90deg, rgba(0,255,199,1) 0%, rgba(0,255,241,1) 100%);}'}</style>
+      </Helmet>
+  
       <h1>Welcome to Habitbuilder</h1>
       <div>
         <p>Monday</p>
