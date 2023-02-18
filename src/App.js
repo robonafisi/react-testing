@@ -12,7 +12,17 @@ function App() {
   });
 
   return (
-    <div className="App">
+    <div>
+      <h1>Welcome to Habitbuilder</h1>
+      <div>
+        <p>Monday</p>
+        <p>Tuesday</p>
+        <p>Wednesday</p>
+        <p>Thursday</p>
+        <p>Friday</p>
+        <p>Saturday</p>
+        <p>Sunday</p>
+      </div>
       <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>
         Add to Counter
