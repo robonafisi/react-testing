@@ -19,22 +19,21 @@ function App() {
                 <style>{'body { background: rgb(0,255,199); background: linear-gradient(90deg, rgba(0,255,199,1) 0%, rgba(0,255,241,1) 100%);}'}</style>
       </Helmet>
   
-      <div>
+      <div className='flex items-center'>
       <h1>Welcome to Habitbuilder</h1>
       </div>
       
       <div className='flex items-center justify-between'>
       <div>
-
       </div>
       <div className="flex space-x-16">
-        <p>Monday</p>
-        <p>Tuesday</p>
-        <p>Wednesday</p>
-        <p>Thursday</p>
-        <p>Friday</p>
-        <p>Saturday</p>
-        <p>Sunday</p>
+        <div className='flex flex-col'><p className='m-2'>Monday</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2'>Tuesday</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2'>Wednesday</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2'>Thursday</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2'>Friday</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2'>Saturday</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2'>Sunday</p><input type="checkbox" className='m-2'/></div>
       </div>
       </div>
 
