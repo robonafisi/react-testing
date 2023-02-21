@@ -23,8 +23,11 @@ function App() {
       <h1>Welcome to Habitbuilder</h1>
       </div>
       
-      <div className="relative container bg-red-500 mx-auto p-6">
-        <h2>Weekday</h2>
+      <div className='flex items-center justify-between'>
+      <div>
+
+      </div>
+      <div className="flex space-x-16">
         <p>Monday</p>
         <p>Tuesday</p>
         <p>Wednesday</p>
@@ -33,6 +36,8 @@ function App() {
         <p>Saturday</p>
         <p>Sunday</p>
       </div>
+      </div>
+
       <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>
         Add to Counter
