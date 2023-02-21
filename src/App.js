@@ -19,8 +19,12 @@ function App() {
                 <style>{'body { background: rgb(0,255,199); background: linear-gradient(90deg, rgba(0,255,199,1) 0%, rgba(0,255,241,1) 100%);}'}</style>
       </Helmet>
   
-      <h1>Welcome to Habitbuilder</h1>
       <div>
+      <h1>Welcome to Habitbuilder</h1>
+      </div>
+      
+      <div className="relative container bg-red-500 mx-auto p-6">
+        <h2>Weekday</h2>
         <p>Monday</p>
         <p>Tuesday</p>
         <p>Wednesday</p>
