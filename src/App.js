@@ -26,15 +26,18 @@ function App() {
       <div className='flex items-center justify-between'>
       <div>
       </div>
+
       <div className="flex space-x-10 m-5">
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Monday</p><input type="checkbox" className='m-2'/></div>
+        <div><h1 className='m-2 text-xl font-bold'>Name of the Habit: Reading Daily</h1></div>
+        <div></div>
+        <div className='flex flex-col border-2 border-indigo-600'><p className='m-2 text-xl font-bold'>Monday</p><input type="checkbox" className='m-2'/></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Tuesday</p><input type="checkbox" className='m-2'/></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Wednesday</p><input type="checkbox" className='m-2'/></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Thursday</p><input type="checkbox" className='m-2'/></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Friday</p><input type="checkbox" className='m-2'/></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Saturday</p><input type="checkbox" className='m-2'/></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Sunday</p><input type="checkbox" className='m-2'/></div>
-      </div>
+        </div>
       </div>
 
       <p>You clicked {count} times</p>
