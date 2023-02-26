@@ -60,7 +60,7 @@ function App() {
 
         {habittype ?
         <div className='flex items-center'>
-        <div className='flex flex-col border-2 border-indigo-600'><p className='m-2 text-xl font-bold'>Monday</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Monday</p><input type="checkbox" className='m-2'/></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Tuesday</p><input type="checkbox" className='m-2'/></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Wednesday</p><input type="checkbox" className='m-2'/></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Thursday</p><input type="checkbox" className='m-2'/></div>
@@ -69,13 +69,13 @@ function App() {
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Sunday</p><input type="checkbox" className='m-2'/></div>
         </div> :
         <div className='flex items-center'>
-        <div className='flex flex-col border-2 border-indigo-600'><p className='m-2 text-xl font-bold'>Monday</p><p>{moncount}</p><button onClick={() => setMoncount(moncount + 1)}>Add to Monday</button></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Tuesday</p><p>{tuecount}</p><button onClick={() => setTuecount(tuecount + 1)}>Add to Tuesday</button></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Wednesday</p><p>{wedcount}</p><button onClick={() => setWedcount(wedcount + 1)}>Add to Wednesday</button></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Thursday</p><p>{thucount}</p><button onClick={() => setThucount(thucount + 1)}>Add to Thursday</button></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Friday</p><p>{fricount}</p><button onClick={() => setFricount(fricount + 1)}>Add to Friday</button></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Saturday</p><p>{satcount}</p><button onClick={() => setSatcount(satcount + 1)}>Add to Saturday</button></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Sunday</p><p>{suncount}</p><button onClick={() => setSuncount(suncount + 1)}>Add to Sunday</button></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold text-center'>MON</p><p className='text-center'>{moncount}</p><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setMoncount(moncount + 1)}>Add</button><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setMoncount(0)}>Reset</button></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold text-center'>TUE</p><p className='text-center'>{tuecount}</p><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setTuecount(tuecount + 1)}>Add</button><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setTuecount(0)}>Reset</button></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold text-center'>WED</p><p className='text-center'>{wedcount}</p><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setWedcount(wedcount + 1)}>Add</button><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setWedcount(0)}>Reset</button></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold text-center'>THU</p><p className='text-center'>{thucount}</p><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setThucount(thucount + 1)}>Add</button><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setThucount(0)}>Reset</button></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold text-center'>FRI</p><p className='text-center'>{fricount}</p><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setFricount(fricount + 1)}>Add</button><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setFricount(0)}>Reset</button></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold text-center'>SAT</p><p className='text-center'>{satcount}</p><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setSatcount(satcount + 1)}>Add</button><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setSatcount(0)}>Reset</button></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold text-center'>SUN</p><p className='text-center'>{suncount}</p><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setSuncount(suncount + 1)}>Add</button><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setSuncount(0)}>Reset</button></div>
         </div>
       }
 
