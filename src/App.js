@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 
 
@@ -17,9 +17,7 @@ function App() {
   const [suncount, setSuncount] = useState(0);
 
 
-   useEffect(() => {
-    document.title = `You clicked ${count} times`;
-  });
+  document.title = "Habit Tracker";
 
   function toggleButton(){
     setHabittype(!habittype)
@@ -41,7 +39,6 @@ function App() {
       </div>
 
       <div className="flex space-x-10 m-5">
-        <div><h1 className='m-2 text-xl font-bold'>Name of the Habit: Reading Daily</h1></div>
        
         <div class="flex items-center justify-center w-full mb-12">
           <label for="toggleB" class="flex items-center cursor-pointer">
@@ -60,13 +57,13 @@ function App() {
 
         {habittype ?
         <div className='flex items-center'>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Monday</p><input type="checkbox" className='m-2'/></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Tuesday</p><input type="checkbox" className='m-2'/></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Wednesday</p><input type="checkbox" className='m-2'/></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Thursday</p><input type="checkbox" className='m-2'/></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Friday</p><input type="checkbox" className='m-2'/></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Saturday</p><input type="checkbox" className='m-2'/></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>Sunday</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>MON</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>TUE</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>WED</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>THU</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>FRI</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>SAT</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>SUN</p><input type="checkbox" className='m-2'/></div>
         </div> :
         <div className='flex items-center'>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold text-center'>MON</p><p className='text-center'>{moncount}</p><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setMoncount(moncount + 1)}>Add</button><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setMoncount(0)}>Reset</button></div>
