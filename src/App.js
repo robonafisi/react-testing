@@ -48,13 +48,13 @@ function App() {
 
         {habittype ?
         <div className='flex items-center justify-center'>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>MON</p><input type="checkbox" className='m-2'/></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>TUE</p><input type="checkbox" className='m-2'/></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>WED</p><input type="checkbox" className='m-2'/></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>THU</p><input type="checkbox" className='m-2'/></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>FRI</p><input type="checkbox" className='m-2'/></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>SAT</p><input type="checkbox" className='m-2'/></div>
-        <div className='flex flex-col'><p className='m-2 text-xl font-bold'>SUN</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col m-3'><p className='m-2 text-xl font-bold'>MON</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col m-3'><p className='m-2 text-xl font-bold'>TUE</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col m-3'><p className='m-2 text-xl font-bold'>WED</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col m-3'><p className='m-2 text-xl font-bold'>THU</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col m-3'><p className='m-2 text-xl font-bold'>FRI</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col m-3'><p className='m-2 text-xl font-bold'>SAT</p><input type="checkbox" className='m-2'/></div>
+        <div className='flex flex-col m-3'><p className='m-2 text-xl font-bold'>SUN</p><input type="checkbox" className='m-2'/></div>
         </div> :
         <div className='flex items-center justify-center'>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold text-center'>MON</p><p className='text-center'>{moncount}</p><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-1" onClick={() => setMoncount(moncount + 1)}>Add</button><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full m-1" onClick={() => setMoncount(0)}>Reset</button></div>
