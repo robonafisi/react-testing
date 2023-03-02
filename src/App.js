@@ -46,6 +46,10 @@ function App() {
           </label>
         </div>
 
+        <div className='text-center'>
+        <h3 class="text-2xl font-bold m-2 my-10" contenteditable="true">Name of the Habit - Click to Change</h3>
+        </div>
+
         {habittype ?
         <div className='flex items-center justify-center'>
         <div className='flex flex-col m-3'><p className='m-2 text-xl font-bold'>MON</p><input type="checkbox" className='m-2'/></div>
