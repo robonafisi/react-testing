@@ -5,8 +5,6 @@ import { Helmet } from 'react-helmet';
 
 function App() {
 
-  const [count, setCount] = useState(0);
-  const [habitcount, setHabitcount] = useState(0);
   const [habittype, setHabittype] = useState(false);
   const [moncount, setMoncount] = useState(0);
   const [tuecount, setTuecount] = useState(0);
@@ -33,30 +31,23 @@ function App() {
       <div className='text-center'>
       <h1 className='text-4xl font-extrabold m-5'>Welcome to Habitbuilder</h1>
       </div>
-      
-      <div className='flex items-center justify-between'>
-      <div>
-      </div>
-
-      <div className="flex space-x-10 m-5">
        
         <div class="flex items-center justify-center w-full mb-12">
           <label for="toggleB" class="flex items-center cursor-pointer">
-            
             <div class="relative">
              
               <input type="checkbox" id="toggleB" onClick={toggleButton} class="sr-only"/>
               <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
               <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
             </div>
-            <div class="ml-3 text-gray-700 font-medium">
+            <div class="text-2xl text-gray-700 font-bold m-2">
               Habbit Type
             </div>
           </label>
         </div>
 
         {habittype ?
-        <div className='flex items-center'>
+        <div className='flex items-center justify-center'>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>MON</p><input type="checkbox" className='m-2'/></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>TUE</p><input type="checkbox" className='m-2'/></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>WED</p><input type="checkbox" className='m-2'/></div>
@@ -65,7 +56,7 @@ function App() {
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>SAT</p><input type="checkbox" className='m-2'/></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold'>SUN</p><input type="checkbox" className='m-2'/></div>
         </div> :
-        <div className='flex items-center'>
+        <div className='flex items-center justify-center'>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold text-center'>MON</p><p className='text-center'>{moncount}</p><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-1" onClick={() => setMoncount(moncount + 1)}>Add</button><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full m-1" onClick={() => setMoncount(0)}>Reset</button></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold text-center'>TUE</p><p className='text-center'>{tuecount}</p><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-1" onClick={() => setTuecount(tuecount + 1)}>Add</button><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full m-1" onClick={() => setTuecount(0)}>Reset</button></div>
         <div className='flex flex-col'><p className='m-2 text-xl font-bold text-center'>WED</p><p className='text-center'>{wedcount}</p><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-1" onClick={() => setWedcount(wedcount + 1)}>Add</button><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full m-1" onClick={() => setWedcount(0)}>Reset</button></div>
@@ -77,22 +68,6 @@ function App() {
       }
 
         </div>
-      </div>
-
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Add to Counter
-      </button>
-      
-      <p>You have {habitcount} habits</p>
-      <button onClick={() => setHabitcount(habitcount + 1)}>
-        Add to Habits
-      </button>
-
-      <button onClick={() => {setCount(0); setHabitcount(0);}}>
-        Reset
-      </button>
-    </div>
   );
 }
 
