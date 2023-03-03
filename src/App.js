@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 function App() {
 
   const [habittype, setHabittype] = useState(false);
+  const [habitname, setHabitname] = useState("");
   const [moncount, setMoncount] = useState(0);
   const [tuecount, setTuecount] = useState(0);
   const [wedcount, setWedcount] = useState(0);
@@ -19,6 +20,10 @@ function App() {
 
   function toggleButton(){
     setHabittype(!habittype)
+  }
+
+  const habitNamer = (event) => {
+    setHabitname(event.target.value)
   }
 
   return (
@@ -47,7 +52,8 @@ function App() {
         </div>
 
         <div className='text-center'>
-        <h3 class="text-2xl font-bold m-2 my-10" contenteditable="true">Name of the Habit - Click to Change</h3>
+        <h2 className="text-2xl font-bold">Habit Name</h2>
+        <input className="text-2xl font-bold m-2 my-10 bg-transparent border-2 border-sky-500" onChange={habitNamer} text="Name of the Habit - Click to Change" />
         </div>
 
         {habittype ?
@@ -71,6 +77,9 @@ function App() {
         </div>
       }
 
+        <div>
+          <p>{habitname}</p>
+        </div>
         </div>
   );
 }
