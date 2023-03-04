@@ -93,24 +93,24 @@ function App() {
           <div className='m-3'><p>Week 8</p><p>Habit 1</p></div>
           <table>
         <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Gender</th>
+          <th>Week 1</th>
+          <th>Week 2</th>
+          <th>Week 3</th>
         </tr>
         <tr>
-          <td>Anom</td>
-          <td>19</td>
-          <td>Male</td>
+          <td>Habit 1</td>
+          <td>Habit 1</td>
+          <td>Habit 1</td>
         </tr>
         <tr>
-          <td>Megha</td>
-          <td>19</td>
-          <td>Female</td>
+          <td>Habit 2</td>
+          <td>Habit 2</td>
+          <td>Habit 2</td>
         </tr>
         <tr>
-          <td>Subham</td>
-          <td>25</td>
-          <td>Male</td>
+          <td>Habit 3</td>
+          <td>Habit 3</td>
+          <td>Habit 3</td>
         </tr>
       </table>
 
