@@ -80,6 +80,10 @@ function App() {
         <div>
           <p>{habitname}</p>
         </div>
+        <div className=''>
+          <h2>Annual Results</h2>
+
+        </div>
         </div>
   );
 }
