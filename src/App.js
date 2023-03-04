@@ -80,9 +80,10 @@ function App() {
         <div>
           <p>{habitname}</p>
         </div>
-        <div className=''>
-          <h2>Annual Results</h2>
-
+        <div className='flex flex-col items-center justify-center'>
+          <h2 className='text-2xl font-bold m-5 mt-12'>Annual Results</h2>
+          <div><p>Week 1</p><p>Habit 1</p></div>
+          <div><p>Week 1</p><p>Habit 1</p></div>
         </div>
         </div>
   );
