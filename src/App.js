@@ -91,6 +91,29 @@ function App() {
           <div className='m-3'><p>Week 6</p><p>Habit 1</p></div>
           <div className='m-3'><p>Week 7</p><p>Habit 1</p></div>
           <div className='m-3'><p>Week 8</p><p>Habit 1</p></div>
+          <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+        </tr>
+        <tr>
+          <td>Anom</td>
+          <td>19</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>Megha</td>
+          <td>19</td>
+          <td>Female</td>
+        </tr>
+        <tr>
+          <td>Subham</td>
+          <td>25</td>
+          <td>Male</td>
+        </tr>
+      </table>
+
           </div>
         </div>
         </div>
