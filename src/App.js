@@ -82,8 +82,16 @@ function App() {
         </div>
         <div className='flex flex-col items-center justify-center'>
           <h2 className='text-2xl font-bold m-5 mt-12'>Annual Results</h2>
-          <div><p>Week 1</p><p>Habit 1</p></div>
-          <div><p>Week 1</p><p>Habit 1</p></div>
+          <div className='flex'>
+          <div className='m-3'><p>Week 1</p><p>Habit 1</p></div>
+          <div className='m-3'><p>Week 2</p><p>Habit 1</p></div>
+          <div className='m-3'><p>Week 3</p><p>Habit 1</p></div>
+          <div className='m-3'><p>Week 4</p><p>Habit 1</p></div>
+          <div className='m-3'><p>Week 5</p><p>Habit 1</p></div>
+          <div className='m-3'><p>Week 6</p><p>Habit 1</p></div>
+          <div className='m-3'><p>Week 7</p><p>Habit 1</p></div>
+          <div className='m-3'><p>Week 8</p><p>Habit 1</p></div>
+          </div>
         </div>
         </div>
   );
