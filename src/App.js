@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 function App() {
 
   const [habittype, setHabittype] = useState(false);
-  const [habitname, setHabitname] = useState("");
+  const [habitname, setHabitname] = useState("Habit Name");
   const [moncount, setMoncount] = useState(0);
   const [tuecount, setTuecount] = useState(0);
   const [wedcount, setWedcount] = useState(0);
@@ -80,18 +80,83 @@ function App() {
         <div>
           <p>{habitname}</p>
         </div>
+
+
+
+
+<div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Product name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Color
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Category
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Price
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4">
+                    Silver
+                </td>
+                <td class="px-6 py-4">
+                    Laptop
+                </td>
+                <td class="px-6 py-4">
+                    $2999
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Microsoft Surface Pro
+                </th>
+                <td class="px-6 py-4">
+                    White
+                </td>
+                <td class="px-6 py-4">
+                    Laptop PC
+                </td>
+                <td class="px-6 py-4">
+                    $1999
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Magic Mouse 2
+                </th>
+                <td class="px-6 py-4">
+                    Black
+                </td>
+                <td class="px-6 py-4">
+                    Accessories
+                </td>
+                <td class="px-6 py-4">
+                    $99
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
         <div className='flex flex-col items-center justify-center'>
           <h2 className='text-2xl font-bold m-5 mt-12'>Annual Results</h2>
           <div className='flex'>
-          <div className='m-3'><p>Week 1</p><p>Habit 1</p></div>
-          <div className='m-3'><p>Week 2</p><p>Habit 1</p></div>
-          <div className='m-3'><p>Week 3</p><p>Habit 1</p></div>
-          <div className='m-3'><p>Week 4</p><p>Habit 1</p></div>
-          <div className='m-3'><p>Week 5</p><p>Habit 1</p></div>
-          <div className='m-3'><p>Week 6</p><p>Habit 1</p></div>
-          <div className='m-3'><p>Week 7</p><p>Habit 1</p></div>
-          <div className='m-3'><p>Week 8</p><p>Habit 1</p></div>
-          <table>
+        
+        <table className='table-auto'>
         <tr>
           <th>Week 1</th>
           <th>Week 2</th>
@@ -121,3 +186,4 @@ function App() {
 }
 
 export default App;
+
